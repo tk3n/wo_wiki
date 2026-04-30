@@ -1,0 +1,161 @@
+[
+  {
+    "name": "フリント",
+    "href": "https://www.whiteoutsurvival.wiki/ja/heroes/%e3%83%95%e3%83%aa%e3%83%b3%e3%83%88/",
+    "urlId": "%e3%83%95%e3%83%aa%e3%83%b3%e3%83%88",
+    "rarity": "SSR",
+    "troopType": "shield",
+    "heroType": "戦闘",
+    "iconImg": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/05/flint.png",
+    "explorationStats": {
+      "atk": "2043",
+      "def": "2664",
+      "hp": "39960"
+    },
+    "expeditionStats": {
+      "atk": "240.19%",
+      "def": "240.19%"
+    },
+    "explorationSkills": [
+      {
+        "name": "復讐の焔",
+        "desc": "激しく渦巻く烈火を噴射し敵を焼き尽くす。0.5秒毎に攻撃力60%/66%/72%/78%/84%のダメージを与え、ターゲットの被ダメージを10%/15%/20%/25%/30%上昇させる。2秒持続。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500211.png"
+      },
+      {
+        "name": "怒りの火",
+        "desc": "傷の痛みがフリントの潜在能力を解き放つ。HPが50%を下回った際、即座に自分のHP上限の20%/25%/30%/35%/40%を回復する。1回の戦闘で1度しか発動しない。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500212.png"
+      },
+      {
+        "name": "熱源拡散",
+        "desc": "焔は我々と共に作戦を行う友の寒さを打ち消してくれる。自軍全体の英雄の攻撃速度が3%/4%/5%/6%/7%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500213.png"
+      }
+    ],
+    "expeditionSkills": [
+      {
+        "name": "野火",
+        "desc": "金石の衝突で散る火花さえ野火となり得る。フリント率いる盾兵の与ダメージが20%/40%/60%/80%/100%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500214.png"
+      },
+      {
+        "name": "森林火災",
+        "desc": "炎は寒さを打ち消し、戦意を高揚させる。味方全部隊の攻撃力が5%/10%/15%/20%/25%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500215.png"
+      },
+      {
+        "name": "灼熱の魂",
+        "desc": "フリントの怒りは烈火の如く全てを呑み込む。味方全部隊の殺傷力が5%/10%/15%/20%/25%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500216.png"
+      }
+    ],
+    "specialSkills": []
+  },
+  {
+    "name": "フレンダー",
+    "href": "https://www.whiteoutsurvival.wiki/ja/heroes/%e3%83%95%e3%83%ac%e3%83%b3%e3%83%80%e3%83%bc/",
+    "urlId": "%e3%83%95%e3%83%ac%e3%83%b3%e3%83%80%e3%83%bc",
+    "rarity": "SSR",
+    "troopType": "spear",
+    "heroType": "戦闘",
+    "iconImg": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/05/philly.png",
+    "explorationStats": {
+      "atk": "2664",
+      "def": "2220",
+      "hp": "26640"
+    },
+    "expeditionStats": {
+      "atk": "240.19%",
+      "def": "240.19%"
+    },
+    "explorationSkills": [
+      {
+        "name": "応急手当",
+        "desc": "フレンダーの卓越した医術で、自軍のすべての英雄のHPが彼女の攻撃力200/220%/240%/260%/280%分回復する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500131.png"
+      },
+      {
+        "name": "ゴッドハンド",
+        "desc": "死神と戯れる能力を活かし、フレンダーは自軍でHPのパーセンテージが最も低い英雄を攻撃力100%/110%/120%/130%/140%分回復させる。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500132.png"
+      },
+      {
+        "name": "麻痺毒素",
+        "desc": "敵単体を毒状態にし、フレンダーの攻撃140%/154%/168%/182%/196%のダメージを与える。さらに1秒間行動不能にする。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500133.png"
+      }
+    ],
+    "expeditionSkills": [
+      {
+        "name": "強健の秘訣",
+        "desc": "フレンダーの調理により兵士達は健康になる。味方全部隊の攻撃力が3%/6%/9%/12%/15%、防御力が2%/4%/6%/8%/10%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500134.png"
+      },
+      {
+        "name": "強化薬剤",
+        "desc": "フレンダーは秘伝の薬剤で戦士たちの身体機能を強化する。味方全部隊が攻撃する際、25%の確率で120%/140%/160%/180%/200%のダメージを与える。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500135.png"
+      },
+      {
+        "name": "専心の神薬",
+        "desc": "フレンダー秘伝の薬で兵士の戦闘時の集中力を高める。40%の確率で味方全部隊の被ダメージを10%/20%/30%/40%/50%軽減する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500136.png"
+      }
+    ],
+    "specialSkills": []
+  },
+  {
+    "name": "アロンゾ",
+    "href": "https://www.whiteoutsurvival.wiki/ja/heroes/%e3%82%a2%e3%83%ad%e3%83%b3%e3%82%be/",
+    "urlId": "%e3%82%a2%e3%83%ad%e3%83%b3%e3%82%be",
+    "rarity": "SSR",
+    "troopType": "archer",
+    "heroType": "戦闘",
+    "iconImg": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/05/alonso.png",
+    "explorationStats": {
+      "atk": "3235",
+      "def": "2220",
+      "hp": "19980"
+    },
+    "expeditionStats": {
+      "atk": "240.19%",
+      "def": "240.19%"
+    },
+    "explorationSkills": [
+      {
+        "name": "強力漁網",
+        "desc": "ターゲット範囲に改良漁網を投げ、攻撃200%/220%/240%/260%/280%の範囲ダメージを与える。さらに行動不能状態にする。1.5秒持続。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500181.png"
+      },
+      {
+        "name": "潮力エネルギー",
+        "desc": "ターゲットに銛を勢いよく撃ち出し、攻撃50%/55%/60%/65%/70%の範囲ダメージを与える。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500182.png"
+      },
+      {
+        "name": "銛強打",
+        "desc": "アロンゾが重たい銛でターゲットを痛撃する。8/7/7/6/5回の通常攻撃毎に次回の攻撃でターゲットを眩暈状態にする。0.2/0.2/0.4/0.4/0.5秒持続。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500183.png"
+      }
+    ],
+    "expeditionSkills": [
+      {
+        "name": "波瀾万丈",
+        "desc": "アロンゾが大波の如く圧倒的な攻勢を仕掛ける。40%の確率で味方全部隊の被ダメージを10%/20%/30%/40%/50%軽減する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500184.png"
+      },
+      {
+        "name": "鋼鉄意志",
+        "desc": "アロンゾは堅固な意志で仲間を鼓舞する。味方全部隊が攻撃する際、20%の確率で敵のダメージが10%/20%/30%/40%/50%減少する。2ターン持続。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500185.png"
+      },
+      {
+        "name": "毒の銛",
+        "desc": "アロンゾは武器に猛毒を塗布する。味方全部隊が攻撃する際、50%の確率で今回の攻撃によるダメージが10%/20%/30%/40%/50%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500186.png"
+      }
+    ],
+    "specialSkills": []
+  }
+]

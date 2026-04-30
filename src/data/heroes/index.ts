@@ -1,0 +1,18 @@
+import { natalia } from './natalia'
+import { jeronimo } from './jeronimo'
+import { jasmine } from './jasmine'
+import { zinman } from './zinman'
+import { flint } from './flint'
+import { philly } from './philly'
+import { alonso } from './alonso'
+import { logan } from './logan'
+import { mia } from './mia'
+import { greg } from './greg'
+import { ahmos } from './ahmos'
+import { reina } from './reina'
+import { lyon } from './lyon'
+import { hector } from './hector'
+import { norah } from './norah'
+import { gwen } from './gwen'
+
+export const ALL_HEROES = [natalia, jeronimo, jasmine, zinman, flint, philly, alonso, logan, mia, greg, ahmos, reina, lyon, hector, norah, gwen]

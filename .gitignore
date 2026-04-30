@@ -1,0 +1,37 @@
+# dependencies
+node_modules/
+
+# Astro
+dist/
+.astro/
+
+# environment variables
+.env
+.env.*
+!.env.example
+
+# misc
+.DS_Store
+*.pem
+Thumbs.db
+
+# editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+
+# DOC
+docs/
+
+# AI
+.claude/

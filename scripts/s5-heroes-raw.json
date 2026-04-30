@@ -1,0 +1,161 @@
+[
+  {
+    "name": "ヘクトー",
+    "href": "https://www.whiteoutsurvival.wiki/ja/heroes/%e3%83%98%e3%82%af%e3%83%88%e3%83%bc/",
+    "urlId": "%e3%83%98%e3%82%af%e3%83%88%e3%83%bc",
+    "rarity": "SSR",
+    "troopType": "shield",
+    "heroType": "戦闘",
+    "iconImg": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/09/1690429616489_3.jpg",
+    "explorationStats": {
+      "atk": "3780",
+      "def": "4928",
+      "hp": "73926"
+    },
+    "expeditionStats": {
+      "atk": "444.35%",
+      "def": "444.35%"
+    },
+    "explorationSkills": [
+      {
+        "name": "鋼刃戦舞",
+        "desc": "戦刃を振り回し、力強い舞のような攻撃を仕掛け、4秒間攻撃速度が80%/90%/100%/110%/120%上昇する。その間は凍結、眩暈などの制御効果を無効化する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/09/hero_skill_icon_500241.png"
+      },
+      {
+        "name": "決死の戦い",
+        "desc": "ヘクトーは命に関わる危険と踊ることに慣れていた。HPが50%以下の時、被ダメージが20%/30%/40%/50%/60%低下する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/09/hero_skill_icon_500242.png"
+      },
+      {
+        "name": "不屈の勇者",
+        "desc": "逆境でこそヘクトーの戦う意志がより強く発揮される。HPが50%以下の時、攻撃力が16%/24%/32%/40%/48%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/09/hero_skill_icon_500243.png"
+      }
+    ],
+    "expeditionSkills": [
+      {
+        "name": "生存本能",
+        "desc": "サバイバルスキルはヘクトーの本能になっていた。彼の存在により、味方全部隊の被ダメージが40%の確率で10%/20%/30%/40%/50%低下する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/09/hero_skill_icon_500244.png"
+      },
+      {
+        "name": "雷の突撃",
+        "desc": "ヘクトーは奇襲で敵陣を崩して引で一掃する戦法を得意とする。盾兵の与ダメージが100%/125%/150%/175%/200%、5兵の与ダメージが20%/40%/60%/80%/100%上昇。攻撃の度に強化効果が前回の85%になり、10回攻撃する間有効。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/09/hero_skill_icon_500245.png"
+      },
+      {
+        "name": "疾風猛襲",
+        "desc": "ヘクトーは攻撃というものの芸術性に精通しており、味方全部隊の攻撃時に25%の確率で120%/140%/160%/180%/200%のダメージを与える。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/09/hero_skill_icon_500246.png"
+      }
+    ],
+    "specialSkills": []
+  },
+  {
+    "name": "ノラ",
+    "href": "https://www.whiteoutsurvival.wiki/ja/heroes/%e3%83%8e%e3%83%a9/",
+    "urlId": "%e3%83%8e%e3%83%a9",
+    "rarity": "SSR",
+    "troopType": "spear",
+    "heroType": "戦闘",
+    "iconImg": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/09/1690429616480_2.jpg",
+    "explorationStats": {
+      "atk": "4928",
+      "def": "4928",
+      "hp": "49284"
+    },
+    "expeditionStats": {
+      "atk": "444.35%",
+      "def": "444.35%"
+    },
+    "explorationSkills": [
+      {
+        "name": "雷の猛攻",
+        "desc": "同時に強力な威力の手榴弾を5個投げ、ランダムなターゲット（英雄優先）に攻撃力60%/66%/72%/78%/84%の範囲ダメージを与える。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/10/hero_skill_icon_500251.png"
+      },
+      {
+        "name": "閃光弾",
+        "desc": "閃光弾を投げ、一定範囲内のターゲットに攻撃力 50%/55%/60%/65%/70%のダメージを与え、眩暈状態にする。1.5秒持続。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/10/hero_skill_icon_500252.png"
+      },
+      {
+        "name": "電光石火",
+        "desc": "鳴り響くエンジン音の中、激しい攻撃を仕掛ける。味方全体の攻撃力が3%/3.5%/4%/4.5%/5%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/10/hero_skill_icon_500253.png"
+      }
+    ],
+    "expeditionSkills": [
+      {
+        "name": "多兵種戦術",
+        "desc": "ノラは多兵種の共同作戦を得意とする。彼女の指揮により、盾兵と弓兵の被ダメージが3%/6%/9%/12%/15%低下し、与ダメージが3%/6%/9%/12%/15%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/10/hero_skill_icon_500255.png"
+      },
+      {
+        "name": "急所突き",
+        "desc": "ノラは奇襲の達人。槍兵が攻撃する際、20%の確率で敵全体に20%/40%/60%/80%/100%の追加ダメージを与える。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/10/hero_skill_icon_500254.png"
+      },
+      {
+        "name": "追撃攻勢",
+        "desc": "ノラの鼓舞が兵士たちを戦うほどに勇猛にする。彼女の率いる部隊が5回攻撃する度に、味方全部隊の与ダメージが 5%/10%/15%/20%/25%上昇し、被ダメージが5%/10%/15%/20%/25%低下する。2ターン持続。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/10/hero_skill_icon_500256.png"
+      }
+    ],
+    "specialSkills": []
+  },
+  {
+    "name": "グエン",
+    "href": "https://www.whiteoutsurvival.wiki/ja/heroes/%e3%82%b0%e3%82%a8%e3%83%b3/",
+    "urlId": "%e3%82%b0%e3%82%a8%e3%83%b3",
+    "rarity": "SSR",
+    "troopType": "archer",
+    "heroType": "戦闘",
+    "iconImg": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/09/1690429616472_1.jpg",
+    "explorationStats": {
+      "atk": "5987",
+      "def": "4928",
+      "hp": "36962"
+    },
+    "expeditionStats": {
+      "atk": "444.35%",
+      "def": "444.35%"
+    },
+    "explorationSkills": [
+      {
+        "name": "砲火砲撃",
+        "desc": "強力な火力で後列の敵ターゲット（英雄優先）を砲撃し、攻撃力180%/198%/216%/234%/252%の範囲ダメージを与える。爆発による衝撃波がターゲットの攻撃速度を50%低下させる。2秒持続。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/09/hero_skill_icon_500261.png"
+      },
+      {
+        "name": "空中狙撃",
+        "desc": "空中で広い視野を利用してターゲット（英雄優先）を正確に射撃し、攻撃力100%/110%/120%/130%/140%のダメージを与える。50%の確率で要害に命中し、ダメージが2倍になる。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/09/hero_skill_icon_500262.png"
+      },
+      {
+        "name": "天火降臨",
+        "desc": "焼夷弾を発射し、燃焼範囲内の敵ターゲットに毎秒攻撃力35%/38.5%/42%/45.5%/49%のダメージを与える。3秒持続。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/09/hero_skill_icon_500263.png"
+      }
+    ],
+    "expeditionSkills": [
+      {
+        "name": "ホークアイ",
+        "desc": "飛行が得意なグエンは敵の弱点を正確に捕捉できる。そのため味方全部隊の攻撃時、ターゲットの被ダメージが 5%/10%/15%/20%/25%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/09/hero_skill_icon_500264.png"
+      },
+      {
+        "name": "空中制圧",
+        "desc": "グエンは制空権を利用して敵を圧倒できる。このおかげで味方全部隊が5回攻撃する度、ターゲットに20%/40%/60%/80%/100%の追加ダメージを与え、次回ターゲットに攻撃された際に5%/7.5%/10%/12.5%/15%の追加ダメージを与える。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/09/hero_skill_icon_500265.png"
+      },
+      {
+        "name": "空中制圧",
+        "desc": "グエンの兵士たちは手榴弾を装備している。弓兵は4回攻撃する度に敵全体に10%/20%/30%/40%/50%の追加ダメージを与える。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/09/hero_skill_icon_500266.png"
+      }
+    ],
+    "specialSkills": []
+  }
+]

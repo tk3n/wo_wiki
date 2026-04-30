@@ -1,0 +1,25 @@
+---
+import { ALL_HEROES } from '@/data/heroes'
+import { HeroDetail } from '@/components/HeroDetail'
+
+export function getStaticPaths() {
+  return ALL_HEROES.map((hero) => ({
+    params: { id: hero.id },
+    props: { hero },
+  }))
+}
+
+const { hero } = Astro.props
+const baseUrl = import.meta.env.BASE_URL
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{hero.name} - ホワサバ非公式Wiki</title>
+  </head>
+  <body style="margin:0;padding:0">
+    <HeroDetail client:load hero={hero} baseUrl={baseUrl} />
+  </body>
+</html>

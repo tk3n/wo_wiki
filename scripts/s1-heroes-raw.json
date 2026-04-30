@@ -1,0 +1,222 @@
+[
+  {
+    "name": "ナタリア",
+    "href": "https://www.whiteoutsurvival.wiki/ja/heroes/%e3%83%8a%e3%82%bf%e3%83%aa%e3%82%a2/",
+    "rarity": "SSR",
+    "troopType": "shield",
+    "heroType": "戦闘",
+    "iconImg": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/05/natalia.png",
+    "explorationStats": {
+      "atk": "1873",
+      "def": "2220",
+      "hp": "36630"
+    },
+    "expeditionStats": {
+      "atk": "200.16%",
+      "def": "200.16%"
+    },
+    "explorationSkills": [
+      {
+        "name": "獣の怒り",
+        "desc": "白熊が立ち上がって地面を叩き、攻撃160%/176%/192%/208%/224%の範囲ダメージを与える。さらに範囲内の敵を撃退して眩暈状態にする。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500091.png"
+      },
+      {
+        "name": "激励",
+        "desc": "鞭を振り回し、ターゲットに攻撃150%/165%/180%/195%/210%のダメージを与える。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500092.png"
+      },
+      {
+        "name": "狂乱の炎",
+        "desc": "白熊と彼の相棒は手強い。ダメージを受けた際、ナタリアは10%の確率で攻撃力が4%/6%/8%/10%/12%上昇する。3秒持続（5回まで重ね掛け可能）。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500093.png"
+      }
+    ],
+    "expeditionSkills": [
+      {
+        "name": "野性の守護",
+        "desc": "ナタリアが獣の群れを指揮して戦士を援護する。40%の確率で味方全部隊の被ダメージを10%/20%/30%/40%/50%軽減する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500095.png"
+      },
+      {
+        "name": "獣群の王",
+        "desc": "ナタリアが味方を励ます。味方全部隊の攻撃力が5%/10%/15%/20%/25%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500094.png"
+      },
+      {
+        "name": "野獣召喚",
+        "desc": "ナタリアが獣の群れを召喚して戦いに協力させる。味方全部隊のダメージが5%/10%/15%/20%/25%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500096.png"
+      }
+    ],
+    "specialSkills": [
+      {
+        "name": "白熊の力",
+        "desc": "全軍に白熊のような有機と力を受ける。ナタリアが出征するかどうかに関わらず、味方全部隊の攻撃力と防御力が2%/4%/6%/8%/10%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/%E5%A8%9C%E5%A1%94%E8%8E%89%E4%BA%9A%E5%A4%A9%E8%B5%8B.png"
+      }
+    ]
+  },
+  {
+    "name": "ジェロニモ",
+    "href": "https://www.whiteoutsurvival.wiki/ja/heroes/%e3%82%b8%e3%82%a7%e3%83%ad%e3%83%8b%e3%83%a2/",
+    "rarity": "SSR",
+    "troopType": "shield",
+    "heroType": "戦闘",
+    "iconImg": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/05/jeronimo.png",
+    "explorationStats": {
+      "atk": "2128",
+      "def": "2220",
+      "hp": "41624"
+    },
+    "expeditionStats": {
+      "atk": "260.20%",
+      "def": "260.20%"
+    },
+    "explorationSkills": [
+      {
+        "name": "三段斬り",
+        "desc": "一定範囲内の敵を高くカチ上げ、攻撃160%/176%/192%/208%/224%のダメージを与える斬撃を3回行う。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500111.png"
+      },
+      {
+        "name": "剣気",
+        "desc": "通常攻撃で剣気を放ち、前方直線範囲内の敵に攻撃15%/17%/19%/21%/23%のダメージ与える。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500112.png"
+      },
+      {
+        "name": "孤高",
+        "desc": "高飛車なジェロニモは、戦況が順調な時は無双する。HPが50%以上の時、攻撃力が16%/24%/32%/40%/48%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500113.png"
+      }
+    ],
+    "expeditionSkills": [
+      {
+        "name": "決起集会",
+        "desc": "ジェロニモはバトル開始前に演説を行い、味方全部隊の与ダメージを5%/10%/15%/20%/25%上昇させる。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500114.png"
+      },
+      {
+        "name": "剣術指導",
+        "desc": "剣術の奥義を授け、味方全部隊の攻撃力を5%/10%/15%/20%/25%上昇させる。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500115.png"
+      },
+      {
+        "name": "練達なる剣技",
+        "desc": "ジェロニモが授けた剣術が兵士に勝機をもたらす。4ターン毎に味方全部隊の与ダメージが6%/12%/18%/24%/30%上昇する。2ターン持続。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500116.png"
+      }
+    ],
+    "specialSkills": [
+      {
+        "name": "天性のリーダー",
+        "desc": "全軍にリーダーシップの資質を浸透させることで、ジェロニモが出征するしないに関わらず、出征中の英雄が率いる部隊殺傷力とHPが3%/6%/9%/12%/15%増加します。",
+        "icon": "https://www.whiteoutsurvival.wiki/ja/heroes/%e3%82%b8%e3%82%a7%e3%83%ad%e3%83%8b%e3%83%a2/"
+      }
+    ]
+  },
+  {
+    "name": "ジャスミン",
+    "href": "https://www.whiteoutsurvival.wiki/ja/heroes/%e3%82%b8%e3%83%a3%e3%82%b9%e3%83%9f%e3%83%b3/",
+    "rarity": "SSR",
+    "troopType": "spear",
+    "heroType": "戦闘",
+    "iconImg": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/05/molly.png",
+    "explorationStats": {
+      "atk": "2220",
+      "def": "2220",
+      "hp": "22200"
+    },
+    "expeditionStats": {
+      "atk": "200.16%",
+      "def": "200.16%"
+    },
+    "explorationSkills": [
+      {
+        "name": "超大型雪玉",
+        "desc": "巨大な雪玉を発射し、円形範囲内のターゲットに攻撃力の180%/198%/216%/234%/252%相当のダメージを与える。さらに凍結状態にする。1.5秒持続。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500121.png"
+      },
+      {
+        "name": "不意打ち",
+        "desc": "雪上に隠れて奇襲を仕掛け、ターゲットに攻撃150%/165%/180%/195%/210%のダメージを与える。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500122.png"
+      },
+      {
+        "name": "少女の執念",
+        "desc": "逆境により、ジャスミンの底知れぬ潜在能力が発揮される。HPが50%以下の時、攻撃速度が20%/30%/40%/50%/60%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500123.png"
+      }
+    ],
+    "expeditionSkills": [
+      {
+        "name": "雪霧の庇護",
+        "desc": "吹き荒れる雪霧が敵の視界を遮る。40%の確率で味方全部隊の被ダメージを10%/20%/30%/40%/50%軽減する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500124.png"
+      },
+      {
+        "name": "氷結の領域",
+        "desc": "雪上はジャスミンの主戦場に他ならない。味方全部隊の攻撃時、50%の確率で今回の攻撃によるダメージが10%/20%/30%/40%/50%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500125.png"
+      },
+      {
+        "name": "不機嫌少女",
+        "desc": "ジャスミンの怒りは全員の戦意を鼓舞する。味方全部隊の与ダメージが5%/10%/15%/20%/25%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500126.png"
+      }
+    ],
+    "specialSkills": []
+  },
+  {
+    "name": "ジンマン",
+    "href": "https://www.whiteoutsurvival.wiki/ja/heroes/%e3%82%b8%e3%83%b3%e3%83%9e%e3%83%b3/",
+    "rarity": "SSR",
+    "troopType": "archer",
+    "heroType": "発展型",
+    "iconImg": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/05/zinman.png",
+    "explorationStats": {
+      "atk": "2697",
+      "def": "2220",
+      "hp": "16650"
+    },
+    "expeditionStats": {
+      "atk": "200.16%",
+      "def": "200.16%"
+    },
+    "explorationSkills": [
+      {
+        "name": "連続釘打ち",
+        "desc": "ターゲットに複数の釘を連打し、毎回攻撃55%/60%/65%/70%/75%のダメージを与える。さらに眩暈状態にする。2秒持続。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500171.png"
+      },
+      {
+        "name": "緊急補強",
+        "desc": "HPが50%を下回った際、すばやく簡易防御工事を行う。自身の防御が50%/75%/100%/125%/150%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500172.png"
+      },
+      {
+        "name": "ヤル気",
+        "desc": "ヤル気満々！攻撃速度が10%/15%/20%/25%/30%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2023/04/hero_skill_icon_500173.png"
+      }
+    ],
+    "expeditionSkills": [
+      {
+        "name": "堅固",
+        "desc": "ジンマンが築いた防衛線は堅固で頼できる。味方全部隊の防御力が2%/4%/6%/8%/10%、HPが2%/4%/6%/8%/10%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/ziman-new-1.png"
+      },
+      {
+        "name": "建築の芸術",
+        "desc": "ジンマンは施工プロセスを合理的にコントロールする。建設に必要な基本資源(生肉、木材、石炭、鉄鋼)の消費を3%/6%/9%/12%/15%削減し、建築のLvUP速度が3%/6%/9%/12%/15%上昇",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/hero_skill_icon_500174.png"
+      },
+      {
+        "name": "陣地戦の強者",
+        "desc": "ジンマンは実戦において味方に有利な地形を構築できる。味方全部隊の殺傷力が5%/10%/15%/20%/25%上昇する。",
+        "icon": "https://gom-s3-user-avatar.s3.us-west-2.amazonaws.com/wp-content/uploads/2024/08/ziman-new-2.png"
+      }
+    ],
+    "specialSkills": []
+  }
+]

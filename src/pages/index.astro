@@ -1,0 +1,17 @@
+---
+import { ALL_HEROES } from '@/data/heroes'
+import { HeroList } from '@/components/HeroList'
+
+const baseUrl = import.meta.env.BASE_URL
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ホワサバ非公式Wiki</title>
+  </head>
+  <body style="margin:0;padding:0">
+    <HeroList client:load heroes={ALL_HEROES} baseUrl={baseUrl} />
+  </body>
+</html>

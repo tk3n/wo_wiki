@@ -50,4 +50,28 @@ export const greg = {
     },
   ],
   },
+  specialEquipment: {
+    name: '王国法典(Lv.10)',
+    explorationStats: {
+      '攻撃': '764',
+      '防御': '630',
+      'HP': '4725',
+    },
+    expeditionStats: {
+      '殺傷力': '70%',
+      'HP': '70%',
+    },
+    skills: [
+    {
+      name: '法廷秩序',
+      desc: 'ターゲットは5秒間スキル使用不可（発動済スキルには影響しない）。ターゲットに攻撃力220%/240%/260%/280%/300%のダメージを与える',
+      icon: '/images/skills/hero_skill_icon_500207.png',
+    },
+    {
+      name: '正義のラッパ',
+      desc: '正義と信念の名目で大軍を招集する。集結部隊のHPが5%/7.5%/10%/12.5%/15%上昇する。',
+      icon: '/images/skills/hero_skill_icon_500208.png',
+    },
+  ],
+  },
 } satisfies Hero

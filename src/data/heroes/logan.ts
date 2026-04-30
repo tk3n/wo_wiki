@@ -50,4 +50,28 @@ export const logan = {
     },
   ],
   },
+  specialEquipment: {
+    name: '鋼鉄の拳(Lv.10)',
+    explorationStats: {
+      '攻撃': '482',
+      '防御': '630',
+      'HP': '9450',
+    },
+    expeditionStats: {
+      '殺傷力': '70%',
+      'HP': '70%',
+    },
+    skills: [
+    {
+      name: '鉄拳強化',
+      desc: '鉄拳をアップグレードし威力を向上させる。自身の与ダメージが10%/15%/20%/25%/30%上昇',
+      icon: '/images/skills/hero_skill_icon_500107.png',
+    },
+    {
+      name: '鉄腕の守り',
+      desc: '強力な鉄拳で都市を守り、防衛部隊防御力が5%/7.5%/10%/12.5%/15%上昇する。',
+      icon: '/images/skills/hero_skill_icon_500108.png',
+    },
+  ],
+  },
 } satisfies Hero

@@ -54,7 +54,31 @@ export const natalia = {
     {
       name: '白熊の力',
       desc: '全軍に白熊のような有機と力を受ける。ナタリアが出征するかどうかに関わらず、味方全部隊の攻撃力と防御力が2%/4%/6%/8%/10%上昇する。',
-      icon: '/images/skills/娜塔莉亚天赋.png',
+      icon: '/images/skills/%E5%A8%9C%E5%A1%94%E8%8E%89%E4%BA%9A%E5%A4%A9%E8%B5%8B.png',
     },
   ],
+  specialEquipment: {
+    name: '狂風を操る者(Lv.10)',
+    explorationStats: {
+      '攻撃': '379',
+      '防御': '495',
+      'HP': '7425',
+    },
+    expeditionStats: {
+      '殺傷力': '55.50%',
+      'HP': '55.50%',
+    },
+    skills: [
+    {
+      name: '一心',
+      desc: 'ナタリアと白熊が心を1つにする。与ダメージが10%/15%/20%/25%/30%上昇する。',
+      icon: '/images/skills/hero_skill_icon_500097.png',
+    },
+    {
+      name: '不敗の軍',
+      desc: 'ナタリアが獣の群れを召喚する。集結部隊の殺傷力が5%/7.5%/10%/12.5%/15%上昇する。',
+      icon: '/images/skills/hero_skill_icon_500098.png',
+    },
+  ],
+  },
 } satisfies Hero

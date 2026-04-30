@@ -50,4 +50,28 @@ export const gwen = {
     },
   ],
   },
+  specialEquipment: {
+    name: '希望の翼(Lv.10)',
+    explorationStats: {
+      '攻撃': '1212',
+      '防御': '999',
+      'HP': '7492',
+    },
+    expeditionStats: {
+      '殺傷力': '111.00%',
+      'HP': '111.00%',
+    },
+    skills: [
+    {
+      name: '協力攻撃',
+      desc: 'グエンの装備には精巧に設計された自動サブ武器がある。スキル発動時に毎回、その武器が自動でランダムなターゲットを射撃し、グエンの攻撃力50%/55%/60%/65%/70%のダメージ（英雄優先）を与える。',
+      icon: '/images/skills/hero_skill_icon_500267.png',
+    },
+    {
+      name: 'ストライカー',
+      desc: 'グエンは急襲戦術に精通している。彼女のこの長所により、集結部隊の殺傷力が5%/7.5%/10%/12.5%/15%上昇する。',
+      icon: '/images/skills/hero_skill_icon_500268.png',
+    },
+  ],
+  },
 } satisfies Hero

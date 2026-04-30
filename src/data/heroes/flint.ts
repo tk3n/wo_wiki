@@ -50,4 +50,28 @@ export const flint = {
     },
   ],
   },
+  specialEquipment: {
+    name: 'グラウルング(Lv.10)',
+    explorationStats: {
+      '攻撃': '414',
+      '防御': '540',
+      'HP': '8,100',
+    },
+    expeditionStats: {
+      '殺傷力': '60%',
+      'HP': '60%',
+    },
+    skills: [
+    {
+      name: '復讐狂熱',
+      desc: '憎しみは戦意の燃料でもある。“怒りの火”発動後、攻撃力が戦闘終了まで8%/12%/16%/20%/24%上昇する。',
+      icon: '/images/skills/hero_skill_icon_500217.png',
+    },
+    {
+      name: '竜の吐息',
+      desc: 'バリケード防御用の火炎放射器を改良し、防衛部隊の攻撃を5%/7.5%/10%/12.5%/15%上昇させる。',
+      icon: '/images/skills/hero_skill_icon_500218.png',
+    },
+  ],
+  },
 } satisfies Hero

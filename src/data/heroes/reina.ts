@@ -50,4 +50,28 @@ export const reina = {
     },
   ],
   },
+  specialEquipment: {
+    name: '忍刀・雷切(Lv.10)',
+    explorationStats: {
+      '攻撃': '832',
+      '防御': '832',
+      'HP': '8325',
+    },
+    expeditionStats: {
+      '殺傷力': '92.50%',
+      'HP': '92.50%',
+    },
+    skills: [
+    {
+      name: '残影一撃',
+      desc: '通常攻撃時、40%の確率でクナイを追加で1本投げ、攻撃力25%/30%/35%/40%/45%のダメージを与える。',
+      icon: '/images/skills/hero_skill_icon_500147.png',
+    },
+    {
+      name: '炎の如き略奪',
+      desc: 'レイナの必殺の好機を掴む能力は非常に高い。集結部隊の殺傷力5%/7.5%/10%/12.5%/15%を上昇させる。',
+      icon: '/images/skills/hero_skill_icon_500148.png',
+    },
+  ],
+  },
 } satisfies Hero

@@ -50,4 +50,28 @@ export const norah = {
     },
   ],
   },
+  specialEquipment: {
+    name: '雪原の放浪者(Lv.10)',
+    explorationStats: {
+      '攻撃': '999',
+      '防御': '999',
+      'HP': '9990',
+    },
+    expeditionStats: {
+      '殺傷力': '111.00%',
+      'HP': '111.00%',
+    },
+    skills: [
+    {
+      name: '震撼手榴弾',
+      desc: '雷の猛攻を放った際に投げつけた手榴弾にショック効果を付与し、25%/27.5%/30%/32.5%/35%の確率でターゲットを眩暈状態にする。0.6/0.7/0.8/0.9/1秒間持続。',
+      icon: '/images/skills/hero_skill_icon_500257.png',
+    },
+    {
+      name: '冷静沈着',
+      desc: 'ノラは常に冷静沈着であり、危機に直面しても慌てない。彼女の激励によって防衛部隊の防御力が5%/7.5%/10%/12.5%/15%上昇する。',
+      icon: '/images/skills/hero_skill_icon_500258.png',
+    },
+  ],
+  },
 } satisfies Hero

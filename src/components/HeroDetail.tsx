@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import type { Hero } from '@/types/hero'
+import type { Hero, ExpeditionStats, ExplorationStats } from '@/types/hero'
 import {
   page,
   backBtn,
@@ -14,34 +14,106 @@ import {
   badgeSSR,
   badgeSR,
   badgeR,
+  badgeSeason,
   badgeTroop,
+  badgeTroopShield,
+  badgeTroopSpear,
+  badgeTroopArcher,
   toggle,
   toggleBtn,
   toggleBtnActive,
   section,
   sectionTitle,
-  statsGrid,
-  statBox,
+  statsRow,
   statLabel,
-  statValue,
+  statValueText,
+  statSep,
   skillList,
   skillItem,
+  skillNameRow,
+  skillIcon,
   skillName,
   skillDesc,
+  skillDescNumber,
+  specialSection,
+  specialSectionTitle,
+  equipmentNameMeta,
+  equipmentStatsGrid,
+  equipmentStatChip,
+  equipmentStatChipLabel,
+  equipmentStatChipValue,
 } from '@/styles/heroDetail.css'
 
 type Mode = 'expedition' | 'exploration'
 
 const TROOP_LABELS: Record<string, string> = {
-  shield: '盾兵',
-  spear: '槍兵',
-  archer: '弓兵',
+  shield: '盾',
+  spear: '槍',
+  archer: '弓',
 }
 
 const rarityBadgeClass: Record<string, string> = {
   SSR: badgeSSR,
   SR: badgeSR,
   R: badgeR,
+}
+
+const TROOP_BADGE_CLASSES: Record<string, string> = {
+  shield: badgeTroopShield,
+  spear: badgeTroopSpear,
+  archer: badgeTroopArcher,
+}
+
+const STAT_KEYWORDS = ['与ダメージ', '被ダメージ', '攻撃力', '防御力', 'ダメージ', '攻撃', '防御', 'HP']
+const HIGHLIGHT_REGEX = new RegExp(
+  `(${STAT_KEYWORDS.join('|')}|\\d+(?:\\.\\d+)?%?)`,
+  'g'
+)
+
+function simplifyToMax(desc: string): string {
+  return desc.replace(
+    /\d+(?:\.\d+)?%?(?:\/\d+(?:\.\d+)?%?)+/g,
+    (match) => {
+      const parts = match.split('/')
+      return parts[parts.length - 1]
+    }
+  )
+}
+
+function renderHighlightedDesc(desc: string) {
+  const simplified = simplifyToMax(desc)
+  const parts = simplified.split(HIGHLIGHT_REGEX)
+  return parts.map((part, i) => {
+    if (/^\d+(?:\.\d+)?%?$/.test(part) && part !== '' && !STAT_KEYWORDS.includes(part)) {
+      return <span key={i} class={skillDescNumber}>{part}</span>
+    }
+    return part
+  })
+}
+
+function StatsLine({ mode, stats }: { mode: Mode; stats: ExpeditionStats | ExplorationStats }) {
+  if (mode === 'expedition') {
+    const s = stats as ExpeditionStats
+    return (
+      <>
+        <span class={statLabel}>攻撃・防御</span>
+        <span class={statValueText}>{s.atk}</span>
+      </>
+    )
+  }
+  const s = stats as ExplorationStats
+  return (
+    <>
+      <span class={statLabel}>攻撃</span>
+      <span class={statValueText}>{s.atk.toLocaleString()}</span>
+      <span class={statSep}>·</span>
+      <span class={statLabel}>防御</span>
+      <span class={statValueText}>{s.def.toLocaleString()}</span>
+      <span class={statSep}>·</span>
+      <span class={statLabel}>HP</span>
+      <span class={statValueText}>{s.hp.toLocaleString()}</span>
+    </>
+  )
 }
 
 function formatStat(val: number | string | undefined): string {
@@ -82,44 +154,35 @@ export function HeroDetail({ hero, baseUrl }: Props) {
           <h1 class={heroName}>{hero.name}</h1>
           <div class={heroBadges}>
             <span class={`${badge} ${rarityBadgeClass[hero.rarity] ?? badgeR}`}>
-              {hero.rarity}{hero.season != null ? ` S${hero.season}` : ''}
+              {hero.rarity}
             </span>
-            <span class={`${badge} ${badgeTroop}`}>{TROOP_LABELS[hero.troopType]}</span>
+            {hero.season != null && (
+              <span class={`${badge} ${badgeSeason}`}>S{hero.season}</span>
+            )}
+            <span class={`${badge} ${TROOP_BADGE_CLASSES[hero.troopType] ?? badgeTroop}`}>{TROOP_LABELS[hero.troopType]}</span>
           </div>
-          <div class={toggle}>
-            <button
-              class={`${toggleBtn} ${mode === 'expedition' ? toggleBtnActive : ''}`}
-              onClick={() => setMode('expedition')}
-            >
-              遠征
-            </button>
-            <button
-              class={`${toggleBtn} ${mode === 'exploration' ? toggleBtnActive : ''}`}
-              onClick={() => setMode('exploration')}
-            >
-              探検
-            </button>
-          </div>
+        </div>
+
+        <div class={toggle}>
+          <button
+            class={`${toggleBtn} ${mode === 'expedition' ? toggleBtnActive : ''}`}
+            onClick={() => setMode('expedition')}
+          >
+            遠征
+          </button>
+          <button
+            class={`${toggleBtn} ${mode === 'exploration' ? toggleBtnActive : ''}`}
+            onClick={() => setMode('exploration')}
+          >
+            探検
+          </button>
         </div>
       </div>
 
       <div class={section}>
-        <div class={sectionTitle}>ステータス</div>
-        <div class={statsGrid}>
-          <div class={statBox}>
-            <div class={statLabel}>攻撃</div>
-            <div class={statValue}>{formatStat(data.stats.atk)}</div>
-          </div>
-          <div class={statBox}>
-            <div class={statLabel}>防御</div>
-            <div class={statValue}>{formatStat(data.stats.def)}</div>
-          </div>
-          {data.stats.hp !== undefined && (
-            <div class={statBox}>
-              <div class={statLabel}>HP</div>
-              <div class={statValue}>{formatStat(data.stats.hp)}</div>
-            </div>
-          )}
+        <div class={statsRow}>
+          <span class={sectionTitle}>ステータス</span>
+          <StatsLine mode={mode} stats={data.stats} />
         </div>
       </div>
 
@@ -128,12 +191,51 @@ export function HeroDetail({ hero, baseUrl }: Props) {
         <div class={skillList}>
           {data.skills.map((skill, i) => (
             <div key={i} class={skillItem}>
-              <div class={skillName}>{skill.name}</div>
-              <div class={skillDesc}>{skill.desc}</div>
+              <div class={skillNameRow}>
+                {skill.icon && (
+                  <img class={skillIcon} src={resolveImg(skill.icon, baseUrl)} alt="" aria-hidden="true" />
+                )}
+                <span class={skillName}>{skill.name}</span>
+              </div>
+              <div class={skillDesc}>{renderHighlightedDesc(skill.desc)}</div>
             </div>
           ))}
         </div>
       </div>
+
+      {hero.specialEquipment && (() => {
+        const eq = hero.specialEquipment!
+        const modeStats = mode === 'expedition' ? eq.expeditionStats : eq.explorationStats
+        const modeSkill = mode === 'expedition' ? eq.skills[1] : eq.skills[0]
+        return (
+          <div class={specialSection}>
+            <div class={specialSectionTitle}>専用装備</div>
+            {modeStats && Object.keys(modeStats).length > 0 && (
+              <div class={equipmentStatsGrid}>
+                {Object.entries(modeStats).map(([label, value]) => (
+                  <div class={equipmentStatChip}>
+                    <span class={equipmentStatChipLabel}>{label}</span>
+                    <span class={equipmentStatChipValue}>{value}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+            {modeSkill && (
+              <div class={skillList}>
+                <div class={skillItem}>
+                  <div class={skillNameRow}>
+                    {modeSkill.icon && (
+                      <img class={skillIcon} src={resolveImg(modeSkill.icon, baseUrl)} alt="" aria-hidden="true" />
+                    )}
+                    <span class={skillName}>{modeSkill.name}</span>
+                  </div>
+                  <div class={skillDesc}>{renderHighlightedDesc(modeSkill.desc)}</div>
+                </div>
+              </div>
+            )}
+          </div>
+        )
+      })()}
     </div>
   )
 }

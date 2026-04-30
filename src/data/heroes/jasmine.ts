@@ -50,4 +50,28 @@ export const jasmine = {
     },
   ],
   },
+  specialEquipment: {
+    name: '雪の精霊(Lv.10)',
+    explorationStats: {
+      '攻撃': '450',
+      '防御': '450',
+      'HP': '4500',
+    },
+    expeditionStats: {
+      '殺傷力': '50%',
+      'HP': '50%',
+    },
+    skills: [
+    {
+      name: '改造発射機',
+      desc: '雪玉発射機を改良し、自身の与ダメージを10%/15%/20%/25%/30%上昇させる',
+      icon: '/images/skills/hero_skill_icon_500127.png',
+    },
+    {
+      name: '雪の庇護',
+      desc: '雪の庇護により、防衛部隊の殺傷力を5%/7.5%/10%/12.5%/15%上昇させる',
+      icon: '/images/skills/hero_skill_icon_500128.png',
+    },
+  ],
+  },
 } satisfies Hero

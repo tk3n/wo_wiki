@@ -1,16 +1,29 @@
 import type { Hero } from '@/types/hero'
-import { card, iconBox, placeholderIcon, cardBody, heroName, cardMeta, rarityBadge, troopBadge } from '@/styles/heroCard.css'
+import {
+  card, cardSSR,
+  iconBox, placeholderIcon,
+  cardBody, heroName, cardMeta,
+  rarityBadge, rarityBadgeSSR, rarityBadgeSR, rarityBadgeR,
+  seasonBadge,
+  troopBadgeShield, troopBadgeSpear, troopBadgeArcher,
+} from '@/styles/heroCard.css'
 
-const rarityColors: Record<string, string> = {
-  SSR: '#7c3aed',
-  SR: '#0369a1',
-  R: '#374151',
+const RARITY_BADGE_CLASSES: Record<string, string> = {
+  SSR: rarityBadgeSSR,
+  SR:  rarityBadgeSR,
+  R:   rarityBadgeR,
 }
 
 const TROOP_LABELS: Record<string, string> = {
-  shield: '盾兵',
-  spear: '槍兵',
-  archer: '弓兵',
+  shield: '盾',
+  spear:  '槍',
+  archer: '弓',
+}
+
+const TROOP_BADGE_CLASSES: Record<string, string> = {
+  shield: troopBadgeShield,
+  spear:  troopBadgeSpear,
+  archer: troopBadgeArcher,
 }
 
 function resolveImg(path: string | undefined, baseUrl: string): string | undefined {
@@ -23,10 +36,12 @@ function resolveImg(path: string | undefined, baseUrl: string): string | undefin
 type Props = { hero: Hero; baseUrl: string }
 
 export function HeroCard({ hero, baseUrl }: Props) {
-  const bgColor = rarityColors[hero.rarity] ?? '#374151'
   const heroIcon = resolveImg(hero.icon, baseUrl)
+  const isSSR = hero.rarity === 'SSR'
+  const rarityClass = `${rarityBadge} ${RARITY_BADGE_CLASSES[hero.rarity] ?? rarityBadgeR}`
+
   return (
-    <a href={`${baseUrl.replace(/\/$/, '')}/heroes/${hero.id}`} class={card}>
+    <a href={`${baseUrl.replace(/\/$/, '')}/heroes/${hero.id}`} class={isSSR ? `${card} ${cardSSR}` : card}>
       <div class={iconBox}>
         {heroIcon ? (
           <img src={heroIcon} alt={hero.name} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
@@ -37,11 +52,14 @@ export function HeroCard({ hero, baseUrl }: Props) {
       <div class={cardBody}>
         <span class={heroName}>{hero.name}</span>
         <div class={cardMeta}>
-          <span class={rarityBadge} style={{ backgroundColor: bgColor }}>
-            {hero.rarity}{hero.season != null ? ` S${hero.season}` : ''}
-          </span>
+          <span class={rarityClass}>{hero.rarity}</span>
+          {hero.season != null && (
+            <span class={`${rarityBadge} ${seasonBadge}`}>S{hero.season}</span>
+          )}
           {hero.troopType && (
-            <span class={troopBadge}>{TROOP_LABELS[hero.troopType] ?? hero.troopType}</span>
+            <span class={TROOP_BADGE_CLASSES[hero.troopType] ?? `${rarityBadge}`}>
+              {TROOP_LABELS[hero.troopType] ?? hero.troopType}
+            </span>
           )}
         </div>
       </div>

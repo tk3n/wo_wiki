@@ -50,4 +50,28 @@ export const ahmos = {
     },
   ],
   },
+  specialEquipment: {
+    name: '守護者の遺物(Lv.10)',
+    explorationStats: {
+      '攻撃': '638',
+      '防御': '832',
+      'HP': '12487',
+    },
+    expeditionStats: {
+      '殺傷力': '92.50%',
+      'HP': '92.50%',
+    },
+    skills: [
+    {
+      name: '不屈の信念',
+      desc: 'アクモスは強い信念で戦友に影響を与える。「クトゥグアの加護」を受けた味方の攻撃力が30%/33%/36%/39%/42%上昇する。2.5秒持続。',
+      icon: '/images/skills/hero_skill_icon_500237.png',
+    },
+    {
+      name: '守護者の誓い',
+      desc: '守護者の決意で都市を固く守り、防衛部隊のHPが5%/7.5%/10%/12.5%/15%上昇する。',
+      icon: '/images/skills/hero_skill_icon_500238.png',
+    },
+  ],
+  },
 } satisfies Hero

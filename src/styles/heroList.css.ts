@@ -1,37 +1,62 @@
 import { style } from '@vanilla-extract/css'
 
+const UI_FONT = "'Chakra Petch', sans-serif"
+const BODY_FONT = "'Noto Sans JP', sans-serif"
+
+// color tokens
+const C = {
+  bgVoid:    '#06080f',
+  bgBase:    '#09111f',
+  bgSurface: '#0e1b2d',
+  bgRaised:  '#132133',
+  borderDim: '#192c44',
+  borderMed: '#22405e',
+  textPri:   '#dde8f7',
+  textSec:   '#6e95b8',
+  textMuted: '#334d66',
+  iceBlue:   '#4899c8',
+  iceBright: '#7ec8e3',
+  gold:      '#c8832a',
+  goldBrt:   '#e8a93e',
+}
+
 export const page = style({
   minHeight: '100vh',
-  backgroundColor: '#0a1120',
-  color: '#f1f5f9',
-  fontFamily: 'sans-serif',
+  backgroundColor: C.bgBase,
+  color: C.textPri,
+  fontFamily: BODY_FONT,
   overflowX: 'hidden',
 })
 
 export const header = style({
-  padding: '16px',
-  borderBottom: '1px solid #1e293b',
+  padding: '14px 16px 12px',
+  borderBottom: `1px solid ${C.borderDim}`,
+  background: `linear-gradient(180deg, ${C.bgVoid} 0%, ${C.bgBase} 100%)`,
 })
 
 export const headerTitle = style({
-  fontSize: '1.25rem',
-  fontWeight: 'bold',
-  color: '#38bdf8',
+  fontSize: '1.15rem',
+  fontWeight: '700',
+  fontFamily: UI_FONT,
+  color: C.iceBright,
   margin: 0,
+  letterSpacing: '0.08em',
+  textTransform: 'uppercase',
 })
 
 export const filters = style({
-  padding: '12px 16px',
+  padding: '10px 16px',
   display: 'flex',
   flexDirection: 'column',
-  gap: '10px',
-  borderBottom: '1px solid #1e293b',
+  gap: '8px',
+  borderBottom: `1px solid ${C.borderDim}`,
+  backgroundColor: C.bgSurface,
 })
 
 export const filterRow = style({
   display: 'flex',
   alignItems: 'center',
-  gap: '8px',
+  gap: '6px',
   flexWrap: 'wrap',
 })
 
@@ -44,35 +69,39 @@ export const seasonRow = style({
 export const seasonScroll = style({
   display: 'flex',
   alignItems: 'center',
-  gap: '6px',
+  gap: '5px',
   overflowX: 'auto',
   WebkitOverflowScrolling: 'touch',
   scrollbarWidth: 'none',
-  '::-webkit-scrollbar': {
-    display: 'none',
-  },
+  '::-webkit-scrollbar': { display: 'none' },
   paddingBottom: '2px',
 })
 
 export const filterLabel = style({
-  fontSize: '0.75rem',
-  color: '#64748b',
-  minWidth: '44px',
+  fontSize: '0.68rem',
+  fontFamily: UI_FONT,
+  color: C.textMuted,
+  minWidth: '40px',
+  letterSpacing: '0.05em',
+  textTransform: 'uppercase',
 })
 
 export const filterBtn = style({
-  padding: '4px 12px',
-  fontSize: '0.8rem',
-  border: '1px solid #334155',
-  borderRadius: '4px',
+  padding: '3px 10px',
+  fontSize: '0.75rem',
+  fontFamily: UI_FONT,
+  letterSpacing: '0.04em',
+  border: `1px solid ${C.borderDim}`,
+  borderRadius: '3px',
   backgroundColor: 'transparent',
-  color: '#94a3b8',
+  color: C.textSec,
   cursor: 'pointer',
   transition: 'all 0.15s',
   flexShrink: 0,
   ':hover': {
-    borderColor: '#38bdf8',
-    color: '#38bdf8',
+    borderColor: C.iceBlue,
+    color: C.iceBright,
+    backgroundColor: `${C.iceBlue}18`,
   },
   ':disabled': {
     opacity: 0.3,
@@ -82,23 +111,24 @@ export const filterBtn = style({
 })
 
 export const filterBtnActive = style({
-  backgroundColor: '#0ea5e9',
-  borderColor: '#0ea5e9',
-  color: '#fff',
+  backgroundColor: `${C.iceBlue}30`,
+  borderColor: C.iceBlue,
+  color: C.iceBright,
   ':hover': {
-    backgroundColor: '#38bdf8',
-    borderColor: '#38bdf8',
-    color: '#fff',
+    backgroundColor: `${C.iceBlue}44`,
+    borderColor: C.iceBright,
+    color: C.iceBright,
   },
 })
 
 export const filterSelect = style({
-  padding: '4px 8px',
-  fontSize: '0.8rem',
-  border: '1px solid #334155',
-  borderRadius: '4px',
-  backgroundColor: '#1e293b',
-  color: '#94a3b8',
+  padding: '3px 8px',
+  fontSize: '0.75rem',
+  fontFamily: UI_FONT,
+  border: `1px solid ${C.borderDim}`,
+  borderRadius: '3px',
+  backgroundColor: C.bgRaised,
+  color: C.textSec,
   cursor: 'pointer',
   ':disabled': {
     opacity: 0.4,
@@ -108,18 +138,34 @@ export const filterSelect = style({
 
 export const grid = style({
   display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fill, minmax(110px, 1fr))',
-  gap: '10px',
-  padding: '16px',
+  gridTemplateColumns: 'repeat(auto-fill, minmax(108px, 1fr))',
+  gap: '8px',
+  padding: '14px 16px',
   maxWidth: '1200px',
   margin: '0 auto',
   width: '100%',
   boxSizing: 'border-box',
 })
 
+export const navRow = style({
+  display: 'flex',
+  gap: '12px',
+  marginTop: '6px',
+})
+
+export const navLink = style({
+  fontSize: '0.72rem',
+  fontFamily: UI_FONT,
+  color: C.textMuted,
+  textDecoration: 'none',
+  letterSpacing: '0.06em',
+  ':hover': { color: C.iceBright },
+})
+
 export const emptyMessage = style({
   padding: '40px 16px',
   textAlign: 'center',
-  color: '#475569',
-  fontSize: '0.9rem',
+  color: C.textMuted,
+  fontSize: '0.85rem',
+  fontFamily: BODY_FONT,
 })

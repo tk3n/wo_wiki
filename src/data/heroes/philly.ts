@@ -50,4 +50,28 @@ export const philly = {
     },
   ],
   },
+  specialEquipment: {
+    name: '神秘の薬典(Lv.10)',
+    explorationStats: {
+      '攻撃': '540',
+      '防御': '540',
+      'HP': '5400',
+    },
+    expeditionStats: {
+      '殺傷力': '60%',
+      'HP': '60%',
+    },
+    skills: [
+    {
+      name: 'エキス抽出',
+      desc: 'フレンダーは薬剤からエキスを抽出し、治療効果を強化する。これによりHPを回復するスキルの効果が30%/40%/50%/60%/70%上昇する。',
+      icon: '/images/skills/hero_skill_icon_500137.png',
+    },
+    {
+      name: '救急訓練',
+      desc: 'フレンダーが簡単な救護の技術を仲間に伝授した為、防衛部隊のHPが5%/7.5%/10%/12.5%/15%上昇した',
+      icon: '/images/skills/hero_skill_icon_500138.png',
+    },
+  ],
+  },
 } satisfies Hero

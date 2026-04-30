@@ -56,4 +56,28 @@ export const jeronimo = {
       desc: '全軍にリーダーシップの資質を浸透させることで、ジェロニモが出征するしないに関わらず、出征中の英雄が率いる部隊殺傷力とHPが3%/6%/9%/12%/15%増加します。',
     },
   ],
+  specialEquipment: {
+    name: '暁の刃(Lv.10)',
+    explorationStats: {
+      '攻撃': '431',
+      '防御': '562',
+      'HP': '8437',
+    },
+    expeditionStats: {
+      '殺傷力': '62.50%',
+      'HP': '62.50%',
+    },
+    skills: [
+    {
+      name: '剣盾',
+      desc: '攻撃時に、剣気が盾となってジェロニモを守り、自身の被ダメージを10%/15%/20%/25%/30%低下させる。',
+      icon: '/images/skills/hero_skill_icon_500117.png',
+    },
+    {
+      name: '真実の術',
+      desc: '剣陣を組んで攻撃を仕掛け、集結部隊の攻撃力を 5%/7.5%/10%/12.5%/15%上昇させる。',
+      icon: '/images/skills/hero_skill_icon_500118.png',
+    },
+  ],
+  },
 } satisfies Hero

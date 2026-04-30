@@ -50,4 +50,28 @@ export const zinman = {
     },
   ],
   },
+  specialEquipment: {
+    name: 'キツツキ(Lv.10)',
+    explorationStats: {
+      '攻撃': '546',
+      '防御': '450',
+      'HP': '3375',
+    },
+    expeditionStats: {
+      '殺傷力': '50%',
+      'HP': '50%',
+    },
+    skills: [
+    {
+      name: '高圧力釘銃',
+      desc: '圧力釘銃が過負荷モードに移行し、攻撃を8%/12%/16%/20%/24%上昇させる。',
+      icon: '/images/skills/hero_skill_icon_500177.png',
+    },
+    {
+      name: '攻撃は最大の防御',
+      desc: '攻撃型櫓を築き上げ、防衛部隊の攻撃を5%/7.5%/10%/12.5%/15%上昇させる。',
+      icon: '/images/skills/hero_skill_icon_500178.png',
+    },
+  ],
+  },
 } satisfies Hero

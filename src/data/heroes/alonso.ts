@@ -50,4 +50,28 @@ export const alonso = {
     },
   ],
   },
+  specialEquipment: {
+    name: 'エイハブ船長(Lv.10)',
+    explorationStats: {
+      '攻撃': '655',
+      '防御': '540',
+      'HP': '4050',
+    },
+    expeditionStats: {
+      '殺傷力': '60%',
+      'HP': '60%',
+    },
+    skills: [
+    {
+      name: '深海の饗宴',
+      desc: 'アロンゾは戦利品を惜しまない。通常攻撃の度に美味しそうな魚が、自軍のHPが最も低い英雄をアロンゾの攻撃力5%/7.5%/10%/12.5%/15%分回復させる。',
+      icon: '/images/skills/hero_skill_icon_500187.png',
+    },
+    {
+      name: '銛強化',
+      desc: 'アロンゾは武器のレベルを上げ、集結部隊の与ダメージを5%/7.5%/10%/12.5%/15%上昇させる。',
+      icon: '/images/skills/hero_skill_icon_500188.png',
+    },
+  ],
+  },
 } satisfies Hero

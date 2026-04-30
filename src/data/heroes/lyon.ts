@@ -50,4 +50,28 @@ export const lyon = {
     },
   ],
   },
+  specialEquipment: {
+    name: 'エラの涙(Lv.10)',
+    explorationStats: {
+      '攻撃': '1010',
+      '防御': '832',
+      'HP': '6243',
+    },
+    expeditionStats: {
+      '殺傷力': '92.50%',
+      'HP': '92.50%',
+    },
+    skills: [
+    {
+      name: 'エラの挽歌',
+      desc: '「シドラク戦歌」を発動後、自身の攻撃力が7%/9%/11%/13%/15%上昇する。戦闘終了まで持続。',
+      icon: '/images/skills/hero_skill_icon_500227.png',
+    },
+    {
+      name: 'イラノンの執念',
+      desc: 'リオンが故郷をしのぶ詩で防衛部隊の戦意を引き出す。彼らの殺傷力が5%/7.5%/10%/12.5%/15%上昇する。',
+      icon: '/images/skills/hero_skill_icon_500228.png',
+    },
+  ],
+  },
 } satisfies Hero

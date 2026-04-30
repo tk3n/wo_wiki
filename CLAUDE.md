@@ -34,3 +34,9 @@
 ### 注意事項
 
 コードのコメントは通常の日本語で書いてください。
+
+## 画像の処理方針
+
+- ヒーローアイコンは `public/images/heroes/{id}.png` にローカル保存し、`/images/heroes/{id}.png` で参照する
+- スキルアイコンは `public/images/skills/{filename}` にローカル保存し、`/images/skills/{filename}` で参照する
+- 画像追加の流れ: スクレイプ -> ローカルに保存 -> ローカルに保存した画像を指定

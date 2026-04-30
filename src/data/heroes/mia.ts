@@ -50,4 +50,28 @@ export const mia = {
     },
   ],
   },
+  specialEquipment: {
+    name: '運命水晶(Lv.10)',
+    explorationStats: {
+      '攻撃': '630',
+      '防御': '630',
+      'HP': '6300',
+    },
+    expeditionStats: {
+      '殺傷力': '70%',
+      'HP': '70%',
+    },
+    skills: [
+    {
+      name: '真実の眼',
+      desc: '水晶球で運命を覗く。ミアの「変動」効果のある全スキルの変動上限と下限がそれぞれ30%/60%/90%/120%/150%上昇。',
+      icon: '/images/skills/hero_skill_icon_500167.png',
+    },
+    {
+      name: '宿命の集結',
+      desc: 'ミアが占いで進軍の好機を導き出す。集結部隊の攻撃力が5%/7.5%/10%/12.5%/15%上昇する。',
+      icon: '/images/skills/hero_skill_icon_500168.png',
+    },
+  ],
+  },
 } satisfies Hero

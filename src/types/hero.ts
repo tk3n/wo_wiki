@@ -28,6 +28,13 @@ export type HeroMode<TStats = ExplorationStats> = {
   skills: Skill[]
 }
 
+export type SpecialEquipment = {
+  name: string
+  explorationStats?: Record<string, string>
+  expeditionStats?: Record<string, string>
+  skills: Skill[]
+}
+
 export type Hero = {
   id: string
   name: string
@@ -39,4 +46,5 @@ export type Hero = {
   exploration: HeroMode<ExplorationStats>
   expedition: HeroMode<ExpeditionStats>
   special?: Skill[]
+  specialEquipment?: SpecialEquipment
 }

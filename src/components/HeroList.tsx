@@ -14,8 +14,7 @@ import {
   seasonScroll,
   grid,
   emptyMessage,
-  navRow,
-  navLink,
+
 } from '@/styles/heroList.css'
 
 type Props = {
@@ -90,9 +89,7 @@ export function HeroList({ heroes, baseUrl }: Props) {
     <div class={page}>
       <div class={header}>
         <h1 class={headerTitle}>ホワサバ非公式Wiki</h1>
-        <nav class={navRow}>
-          <a href={`${baseUrl.replace(/\/$/, '')}/skills`} class={navLink}>スキル図鑑</a>
-        </nav>
+
       </div>
 
       <div class={filters}>

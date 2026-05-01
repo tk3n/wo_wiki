@@ -70,11 +70,7 @@ export const seasonScroll = style({
   display: 'flex',
   alignItems: 'center',
   gap: '5px',
-  overflowX: 'auto',
-  WebkitOverflowScrolling: 'touch',
-  scrollbarWidth: 'none',
-  '::-webkit-scrollbar': { display: 'none' },
-  paddingBottom: '2px',
+  flexWrap: 'wrap',
 })
 
 export const filterLabel = style({
@@ -145,21 +141,6 @@ export const grid = style({
   margin: '0 auto',
   width: '100%',
   boxSizing: 'border-box',
-})
-
-export const navRow = style({
-  display: 'flex',
-  gap: '12px',
-  marginTop: '6px',
-})
-
-export const navLink = style({
-  fontSize: '0.72rem',
-  fontFamily: UI_FONT,
-  color: C.textMuted,
-  textDecoration: 'none',
-  letterSpacing: '0.06em',
-  ':hover': { color: C.iceBright },
 })
 
 export const emptyMessage = style({

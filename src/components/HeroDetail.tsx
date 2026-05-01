@@ -2,6 +2,7 @@ import { useState } from 'preact/hooks'
 import type { Hero, ExpeditionStats, ExplorationStats } from '@/types/hero'
 import {
   page,
+  panel,
   backBtn,
   heroHeader,
   iconWrapper,
@@ -130,16 +131,28 @@ function resolveImg(path: string | undefined, baseUrl: string): string | undefin
   return `${base}${path.startsWith('/') ? path : '/' + path}`
 }
 
-type Props = { hero: Hero; baseUrl: string }
+type Props = { hero: Hero; baseUrl: string; variant?: 'page' | 'panel' }
 
-export function HeroDetail({ hero, baseUrl }: Props) {
+export function HeroDetail({ hero, baseUrl, variant = 'page' }: Props) {
   const [mode, setMode] = useState<Mode>('expedition')
   const data = hero[mode]
   const heroIcon = resolveImg(hero.icon, baseUrl)
 
   return (
-    <div class={page}>
-      <a href={baseUrl} class={backBtn}>← 一覧へ戻る</a>
+    <div class={variant === 'panel' ? panel : page}>
+      {variant === 'page' && (
+        <a
+          href={baseUrl}
+          class={backBtn}
+          onClick={(e: MouseEvent) => {
+            const ref = document.referrer
+            if (ref && new URL(ref).origin === window.location.origin) {
+              e.preventDefault()
+              history.back()
+            }
+          }}
+        >← 一覧へ戻る</a>
+      )}
 
       <div class={heroHeader}>
         <div class={iconWrapper}>

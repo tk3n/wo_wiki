@@ -34,6 +34,17 @@ export const page = style({
   fontFamily: BODY_FONT,
   maxWidth: '600px',
   margin: '0 auto',
+  '@media': {
+    '(min-width: 768px)': {
+      maxWidth: '900px',
+    }
+  }
+})
+
+export const panel = style({
+  color: C.textPri,
+  fontFamily: BODY_FONT,
+  overflowY: 'auto',
 })
 
 export const backBtn = style({

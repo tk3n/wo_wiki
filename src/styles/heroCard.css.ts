@@ -45,6 +45,11 @@ export const card = style({
   },
 })
 
+export const cardSelected = style({
+  borderColor: C.iceBlue,
+  boxShadow: `0 0 0 2px ${C.iceBlue}66`,
+})
+
 export const cardSSR = style({
   borderColor: `${C.ssrPurple}66`,
   ':hover': {

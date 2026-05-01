@@ -1,6 +1,6 @@
 import type { Hero } from '@/types/hero'
 import {
-  card, cardSSR,
+  card, cardSSR, cardSelected,
   iconBox, placeholderIcon,
   cardBody, heroName, cardMeta,
   rarityBadge, rarityBadgeSSR, rarityBadgeSR, rarityBadgeR,
@@ -33,15 +33,23 @@ function resolveImg(path: string | undefined, baseUrl: string): string | undefin
   return `${base}${path.startsWith('/') ? path : '/' + path}`
 }
 
-type Props = { hero: Hero; baseUrl: string }
+type Props = { hero: Hero; baseUrl: string; onSelect?: (id: string) => void; isSelected?: boolean }
 
-export function HeroCard({ hero, baseUrl }: Props) {
+export function HeroCard({ hero, baseUrl, onSelect, isSelected }: Props) {
   const heroIcon = resolveImg(hero.icon, baseUrl)
   const isSSR = hero.rarity === 'SSR'
   const rarityClass = `${rarityBadge} ${RARITY_BADGE_CLASSES[hero.rarity] ?? rarityBadgeR}`
+  const cardClass = [
+    isSSR ? `${card} ${cardSSR}` : card,
+    isSelected ? cardSelected : '',
+  ].join(' ').trim()
 
   return (
-    <a href={`${baseUrl.replace(/\/$/, '')}/heroes/${hero.id}`} class={isSSR ? `${card} ${cardSSR}` : card}>
+    <a
+      href={`${baseUrl.replace(/\/$/, '')}/heroes/${hero.id}`}
+      class={cardClass}
+      onClick={(e) => { if (onSelect) { e.preventDefault(); onSelect(hero.id) } }}
+    >
       <div class={iconBox}>
         {heroIcon ? (
           <img src={heroIcon} alt={hero.name} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />

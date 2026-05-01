@@ -42,6 +42,92 @@ export const headerTitle = style({
   margin: 0,
   letterSpacing: '0.08em',
   textTransform: 'uppercase',
+  textDecoration: 'none',
+  ':hover': {
+    color: C.textPri,
+  },
+})
+
+export const detailCloseBtn = style({
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'flex-end',
+  padding: '8px 12px',
+  borderBottom: `1px solid ${C.borderDim}`,
+})
+
+export const closeBtnInner = style({
+  background: 'transparent',
+  border: `1px solid ${C.borderDim}`,
+  borderRadius: '4px',
+  color: C.textMuted,
+  cursor: 'pointer',
+  fontSize: '0.8rem',
+  fontFamily: UI_FONT,
+  padding: '2px 8px',
+  letterSpacing: '0.04em',
+  transition: 'all 0.15s',
+  ':hover': {
+    borderColor: C.iceBlue,
+    color: C.iceBright,
+  },
+})
+
+export const contentWrapper = style({
+  width: '100%',
+  '@media': {
+    '(min-width: 768px)': {
+      display: 'grid',
+      gridTemplateColumns: '220px 1fr',
+      alignItems: 'start',
+    }
+  }
+})
+
+export const contentWrapperWithDetail = style({
+  width: '100%',
+  '@media': {
+    '(min-width: 768px)': {
+      display: 'grid',
+      gridTemplateColumns: '220px 1fr 420px',
+      alignItems: 'start',
+    }
+  }
+})
+
+export const detailPane = style({
+  display: 'none',
+  '@media': {
+    '(min-width: 768px)': {
+      display: 'block',
+      borderLeft: `1px solid ${C.borderDim}`,
+      minHeight: '100vh',
+    }
+  }
+})
+
+export const detailEmpty = style({
+  padding: '40px 20px',
+  textAlign: 'center',
+  color: C.textMuted,
+  fontSize: '0.85rem',
+  fontFamily: BODY_FONT,
+})
+
+export const sidebarContainer = style({
+  '@media': {
+    '(min-width: 768px)': {
+      position: 'sticky',
+      top: 0,
+      maxHeight: '100vh',
+      overflowY: 'auto',
+      borderRight: `1px solid ${C.borderDim}`,
+    }
+  }
+})
+
+export const gridArea = style({
+  minWidth: 0,
 })
 
 export const filters = style({
@@ -51,6 +137,13 @@ export const filters = style({
   gap: '8px',
   borderBottom: `1px solid ${C.borderDim}`,
   backgroundColor: C.bgSurface,
+  '@media': {
+    '(min-width: 768px)': {
+      borderBottom: 'none',
+      padding: '20px 16px',
+      gap: '16px',
+    }
+  }
 })
 
 export const filterRow = style({
@@ -58,12 +151,25 @@ export const filterRow = style({
   alignItems: 'center',
   gap: '6px',
   flexWrap: 'wrap',
+  '@media': {
+    '(min-width: 768px)': {
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+    }
+  }
 })
 
 export const seasonRow = style({
   display: 'flex',
   alignItems: 'center',
   gap: '0',
+  '@media': {
+    '(min-width: 768px)': {
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+      gap: '6px',
+    }
+  }
 })
 
 export const seasonScroll = style({
@@ -80,6 +186,13 @@ export const filterLabel = style({
   minWidth: '40px',
   letterSpacing: '0.05em',
   textTransform: 'uppercase',
+  '@media': {
+    '(min-width: 768px)': {
+      display: 'block',
+      minWidth: 'auto',
+      marginBottom: '4px',
+    }
+  }
 })
 
 export const filterBtn = style({
@@ -141,6 +254,15 @@ export const grid = style({
   margin: '0 auto',
   width: '100%',
   boxSizing: 'border-box',
+  '@media': {
+    '(min-width: 768px)': {
+      gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))',
+      gap: '12px',
+      padding: '20px',
+      maxWidth: 'none',
+      margin: '0',
+    }
+  }
 })
 
 export const emptyMessage = style({

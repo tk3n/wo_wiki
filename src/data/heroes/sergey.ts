@@ -18,7 +18,7 @@ export const sergey = {
     },
     {
       name: '盾の壁',
-      desc: 'セルゲイが仲間を率いて防衛ラインを築き、味方英雄全員の防御が5%/7.5%/10%/12.5%/15%上昇する。',
+      desc: '味方英雄全員の防御が5%/7.5%/10%/12.5%/15%上昇する。',
       icon: '/images/skills/hero_skill_icon_500042.png',
     },
     {
@@ -34,12 +34,12 @@ export const sergey = {
     skills: [
     {
       name: 'プロテクト',
-      desc: 'セルゲイが盾で味方隊員を守り、味方全部隊の被ダメージが4%/8%/12%/16%/20%減少する。',
+      desc: '味方全部隊の被ダメージが4%/8%/12%/16%/20%減少する。',
       icon: '/images/skills/hero_skill_icon_500044.png',
     },
     {
       name: '弱体化打撃',
-      desc: 'セルゲイが敵全部隊の攻撃力を4%/8%/12%/16%/20%低下させる。',
+      desc: '敵全部隊の攻撃力を4%/8%/12%/16%/20%低下させる。',
       icon: '/images/skills/hero_skill_icon_500045.png',
     },
   ],

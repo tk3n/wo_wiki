@@ -18,12 +18,12 @@ export const jessie = {
     },
     {
       name: '防具改造',
-      desc: '防具を改造し、防御力が25%/37.5%/50%/62.5%/70%上昇する。',
+      desc: '防御力が25%/37.5%/50%/62.5%/70%上昇する。',
       icon: '/images/skills/hero_skill_icon_500072.png',
     },
     {
       name: '武器改造',
-      desc: '武器を改造し、攻撃力が8%/12%/16%/20%/24%上昇する。',
+      desc: '攻撃力が8%/12%/16%/20%/24%上昇する。',
       icon: '/images/skills/hero_skill_icon_500073.png',
     },
   ],
@@ -34,12 +34,12 @@ export const jessie = {
     skills: [
     {
       name: '完全武装',
-      desc: 'ジェシーが味方の武器を改良し、味方全部隊のダメージが5%/10%/15%/20%/25%上昇する。',
+      desc: '味方全部隊のダメージが5%/10%/15%/20%/25%上昇する。',
       icon: '/images/skills/hero_skill_icon_500074.png',
     },
     {
       name: 'メカニックバリア',
-      desc: 'ジェシーが味方の防具を改良し、味方全部隊の被ダメージが4%/8%/12%/16%/20%減少する。',
+      desc: '味方全部隊の被ダメージが4%/8%/12%/16%/20%減少する。',
       icon: '/images/skills/hero_skill_icon_500075.png',
     },
   ],

@@ -18,7 +18,7 @@ export const eugene = {
     },
     {
       name: '鋭刃',
-      desc: '斧を強化させ、与ダメージが10%/15%/20%25%/30%上昇する。',
+      desc: '与ダメージが10%/15%/20%25%/30%上昇する。',
       icon: '/images/skills/hero_skill_icon_500002.png',
     },
   ],
@@ -29,12 +29,12 @@ export const eugene = {
     skills: [
     {
       name: '一子相伝',
-      desc: 'ユージーンの優れた伐採技術により、都市内の伐採場生産量が5%/10%/15%/20%/25%昇する。',
+      desc: '都市内の伐採場生産量が5%/10%/15%/20%/25%上昇する。',
       icon: '/images/skills/hero_skill_icon_500004.png',
     },
     {
       name: '伐採名人',
-      desc: 'ユージーンは常に伐採作業に集中できる。出征時の木材採集速度が5%/10%/15%20%/25%上昇する。',
+      desc: '出征時の木材採集速度が5%/10%/15%20%/25%上昇する。',
       icon: '/images/skills/hero_skill_icon_500005.png',
     },
   ],

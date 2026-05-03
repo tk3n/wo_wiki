@@ -7,7 +7,7 @@ export const lyon = {
   troopType: 'archer',
   heroType: '戦闘',
   season: 4,
-  icon: '/images/heroes/1690429616507_5.jpg',
+  icon: '/images/heroes/lyon.jpg',
 
   exploration: {
     stats: { atk: 4989, def: 4106, hp: 30802 },

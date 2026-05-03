@@ -7,7 +7,7 @@ export const norah = {
   troopType: 'spear',
   heroType: '戦闘',
   season: 5,
-  icon: '/images/heroes/1690429616480_2.jpg',
+  icon: '/images/heroes/norah.jpg',
 
   exploration: {
     stats: { atk: 4928, def: 4928, hp: 49284 },

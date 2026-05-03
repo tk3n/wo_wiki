@@ -32,6 +32,33 @@ export const header = style({
   padding: '14px 16px 12px',
   borderBottom: `1px solid ${C.borderDim}`,
   background: `linear-gradient(180deg, ${C.bgVoid} 0%, ${C.bgBase} 100%)`,
+  display: 'flex',
+  alignItems: 'center',
+  gap: '16px',
+  flexWrap: 'wrap',
+})
+
+export const nav = style({
+  display: 'flex',
+  gap: '12px',
+})
+
+export const navLink = style({
+  fontSize: '0.8rem',
+  fontFamily: UI_FONT,
+  color: C.textSec,
+  textDecoration: 'none',
+  letterSpacing: '0.04em',
+  paddingBottom: '2px',
+  transition: 'color 0.15s',
+  ':hover': {
+    color: C.iceBright,
+  },
+})
+
+export const navLinkActive = style({
+  color: C.iceBright,
+  borderBottom: `2px solid ${C.iceBlue}`,
 })
 
 export const headerTitle = style({
@@ -263,6 +290,11 @@ export const grid = style({
       margin: '0',
     }
   }
+})
+
+export const listView = style({
+  display: 'flex',
+  flexDirection: 'column',
 })
 
 export const emptyMessage = style({

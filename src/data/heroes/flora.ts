@@ -31,7 +31,7 @@ export const flora = {
   },
 
   expedition: {
-    stats: { atk: '1,621.29%', def: '1,621.29%' },
+    stats: { atk: '1621.29%', def: '1621.29%' },
     skills: [
     {
       name: '刺蔓の舞(Lv.5)',
@@ -53,9 +53,9 @@ export const flora = {
   specialEquipment: {
     name: '豊穣の種(Lv.10)',
     explorationStats: {
-      '攻撃': '4,338',
-      '防御': '4,338',
-      'HP': '43,380',
+      '攻撃': '4338',
+      '防御': '4338',
+      'HP': '43380',
     },
     expeditionStats: {
       '殺傷力': '405.00%',

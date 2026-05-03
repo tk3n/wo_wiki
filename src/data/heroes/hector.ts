@@ -7,7 +7,7 @@ export const hector = {
   troopType: 'shield',
   heroType: '戦闘',
   season: 5,
-  icon: '/images/heroes/1690429616489_3.jpg',
+  icon: '/images/heroes/hector.jpg',
 
   exploration: {
     stats: { atk: 3780, def: 4928, hp: 73926 },
@@ -68,7 +68,7 @@ export const hector = {
       icon: '/images/skills/hero_skill_icon_500247.png',
     },
     {
-      name: '難攻不落 (lvl5)',
+      name: '難攻不落',
       desc: '防衛部隊の攻撃力が5%/7.5%/10%/12.5%/15%上昇する。',
       icon: '/images/skills/hero_skill_icon_500248.png',
     },

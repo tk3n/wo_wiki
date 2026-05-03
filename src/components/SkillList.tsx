@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'preact/hooks'
 import type { Hero, Rarity } from '@/types/hero'
-import { HeroCard } from './HeroCard'
+import { SkillListRow } from './SkillListRow'
 import { HeroDetail } from './HeroDetail'
 import {
   betaBadge,
@@ -27,7 +27,7 @@ import {
   filterBtnActive,
   seasonRow,
   seasonScroll,
-  grid,
+  listView,
   emptyMessage,
 } from '@/styles/heroList.css'
 
@@ -52,8 +52,7 @@ function isPC() {
   return typeof window !== 'undefined' && window.innerWidth >= 768
 }
 
-export function HeroList({ heroes, baseUrl }: Props) {
-  // サーバーレンダリングとクライアント初期状態を一致させてhydrationミスマッチを防ぐ
+export function SkillList({ heroes, baseUrl }: Props) {
   const [rarity, setRarity] = useState<Rarity>('SSR')
   const [season, setSeason] = useState<string>('all')
   const [selectedHeroId, setSelectedHeroId] = useState<string | null>(null)
@@ -67,10 +66,7 @@ export function HeroList({ heroes, baseUrl }: Props) {
       setSeason(s)
       setSelectedHeroId(heroId)
     }
-    // マウント時に URL から正しい状態を読み込む（hydration 後）
     syncFromUrl()
-    // popstate: pushState で変えた URL を戻る/進む操作
-    // pageshow: bfcache からの復元
     window.addEventListener('popstate', syncFromUrl)
     window.addEventListener('pageshow', syncFromUrl)
     return () => {
@@ -129,8 +125,8 @@ export function HeroList({ heroes, baseUrl }: Props) {
       <div class={header}>
         <a href={baseUrl} class={headerTitle}>ホワサバ非公式Wiki</a>
         <nav class={nav}>
-          <a href={baseUrl} class={`${navLink} ${navLinkActive}`}>英雄一覧</a>
-          <a href={skillsUrl} class={navLink}>スキル確認</a>
+          <a href={baseUrl} class={navLink}>英雄一覧</a>
+          <a href={skillsUrl} class={`${navLink} ${navLinkActive}`}>スキル確認</a>
           <a href={battleAdvisorUrl} class={navLink}>
             戦闘相談<span class={betaBadge}>β</span>
           </a>
@@ -182,9 +178,9 @@ export function HeroList({ heroes, baseUrl }: Props) {
           {filtered.length === 0 ? (
             <p class={emptyMessage}>該当する英雄がいません。</p>
           ) : (
-            <div class={grid}>
+            <div class={listView}>
               {filtered.map((hero) => (
-                <HeroCard
+                <SkillListRow
                   key={hero.id}
                   hero={hero}
                   baseUrl={baseUrl}

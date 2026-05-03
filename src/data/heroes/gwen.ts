@@ -7,7 +7,7 @@ export const gwen = {
   troopType: 'archer',
   heroType: '戦闘',
   season: 5,
-  icon: '/images/heroes/1690429616472_1.jpg',
+  icon: '/images/heroes/gwen.jpg',
 
   exploration: {
     stats: { atk: 5987, def: 4928, hp: 36962 },
@@ -44,7 +44,7 @@ export const gwen = {
       icon: '/images/skills/hero_skill_icon_500265.png',
     },
     {
-      name: '空中制圧',
+      name: '小隊爆破',
       desc: '弓兵は4回攻撃する度に敵全体に10%/20%/30%/40%/50%の追加ダメージを与える。',
       icon: '/images/skills/hero_skill_icon_500266.png',
     },

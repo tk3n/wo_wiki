@@ -7,7 +7,7 @@ export const edith = {
   troopType: 'shield',
   heroType: '戦闘',
   season: 7,
-  icon: '/images/heroes/20240222_2.jpg',
+  icon: '/images/heroes/edith.jpg',
 
   exploration: {
     stats: { atk: 5466, def: 7126, hp: 106892 },

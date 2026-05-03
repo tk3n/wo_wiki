@@ -53,9 +53,9 @@ export const gisela = {
   specialEquipment: {
     name: 'ヘラクレス(Lv.10)',
     explorationStats: {
-      '攻撃': '3,325',
-      '防御': '4,338',
-      'HP': '65,070',
+      '攻撃': '3325',
+      '防御': '4338',
+      'HP': '65070',
     },
     expeditionStats: {
       '殺傷力': '405.00%',

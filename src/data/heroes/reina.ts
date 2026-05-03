@@ -7,7 +7,7 @@ export const reina = {
   troopType: 'spear',
   heroType: '戦闘',
   season: 4,
-  icon: '/images/heroes/1690429616516_7.jpg',
+  icon: '/images/heroes/reina.jpg',
 
   exploration: {
     stats: { atk: 4106, def: 4106, hp: 41070 },

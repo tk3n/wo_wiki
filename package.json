@@ -8,8 +8,10 @@
     "preview": "astro preview"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^13.5.0",
     "@astrojs/preact": "^5.1.2",
     "astro": "^6.1.10",
+    "openai": "^6.36.0",
     "preact": "^10.25.4"
   },
   "devDependencies": {

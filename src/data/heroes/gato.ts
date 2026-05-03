@@ -31,7 +31,7 @@ export const gato = {
   },
 
   expedition: {
-    stats: { atk: '+780.62%', def: '+780.62%' },
+    stats: { atk: '780.62%', def: '780.62%' },
     skills: [
     {
       name: '黄金の近衛',
@@ -53,9 +53,9 @@ export const gato = {
   specialEquipment: {
     name: '黄金の牙(Lv.10)',
     explorationStats: {
-      '攻撃': '1,331',
-      '防御': '1,737',
-      'HP': '26,055',
+      '攻撃': '1331',
+      '防御': '1737',
+      'HP': '26055',
     },
     expeditionStats: {
       '殺傷力': '+193.00%',

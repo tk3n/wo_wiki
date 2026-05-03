@@ -31,7 +31,7 @@ export const vulcanus = {
   },
 
   expedition: {
-    stats: { atk: '1,621.29%', def: '1,621.29%' },
+    stats: { atk: '1621.29%', def: '1621.29%' },
     skills: [
     {
       name: '覇者の怒り(Lv.5)',
@@ -53,9 +53,9 @@ export const vulcanus = {
   specialEquipment: {
     name: '滅びの軌跡(Lv.10)',
     explorationStats: {
-      '攻撃': '5,263',
-      '防御': '4,338',
-      'HP': '32,535',
+      '攻撃': '5263',
+      '防御': '4338',
+      'HP': '32535',
     },
     expeditionStats: {
       '殺傷力': '405.00%',

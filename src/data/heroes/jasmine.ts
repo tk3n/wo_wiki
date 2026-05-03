@@ -7,7 +7,7 @@ export const jasmine = {
   troopType: 'spear',
   heroType: '戦闘',
   season: 1,
-  icon: '/images/heroes/molly.png',
+  icon: '/images/heroes/jasmine.png',
 
   exploration: {
     stats: { atk: 2220, def: 2220, hp: 22200 },

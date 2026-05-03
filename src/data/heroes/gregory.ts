@@ -35,17 +35,17 @@ export const gregory = {
     skills: [
     {
       name: '灼熱の軍団',
-      desc: '味方全部隊の攻撃力が3/6/9/12/15%、防御力が2/4/6/8/10%上昇する。',
+      desc: '味方全部隊の攻撃力が3%/6%/9%/12%/15%、防御力が2%/4%/6%/8%/10%上昇する。',
       icon: '/images/skills/hero_skill_icon_500414.png',
     },
     {
       name: '制圧突撃',
-      desc: '味方全部隊の通常攻撃時に5/10/15/20/25%の確率でクリティカルダメージを発生させる。',
+      desc: '味方全部隊の通常攻撃時に5%/10%/15%/20%/25%の確率でクリティカルダメージを発生させる。',
       icon: '/images/skills/hero_skill_icon_500415.png',
     },
     {
       name: '鋼鉄の防壁',
-      desc: '盾兵が受けるダメージが4/8/12/16/20%低下する。',
+      desc: '盾兵が受けるダメージが4%/8%/12%/16%/20%低下する。',
       icon: '/images/skills/hero_skill_icon_500416.png',
     },
   ],
@@ -53,9 +53,9 @@ export const gregory = {
   specialEquipment: {
     name: '灼陽巨剣(Lv.10)',
     explorationStats: {
-      '攻撃': '1,921',
-      '防御': '2,506',
-      'HP': '37,597',
+      '攻撃': '1921',
+      '防御': '2506',
+      'HP': '37597',
     },
     expeditionStats: {
       '殺傷力': '277.50%',

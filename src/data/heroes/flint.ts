@@ -55,7 +55,7 @@ export const flint = {
     explorationStats: {
       '攻撃': '414',
       '防御': '540',
-      'HP': '8,100',
+      'HP': '8100',
     },
     expeditionStats: {
       '殺傷力': '60%',

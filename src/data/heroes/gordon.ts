@@ -7,7 +7,7 @@ export const gordon = {
   troopType: 'spear',
   heroType: '戦闘',
   season: 7,
-  icon: '/images/heroes/20240222_1.jpg',
+  icon: '/images/heroes/gordon.jpg',
 
   exploration: {
     stats: { atk: 7126, def: 7126, hp: 71262 },
@@ -24,7 +24,7 @@ export const gordon = {
     },
     {
       name: '毒の体質',
-      desc: '防御力が25%/7.5%/50%/67.5%/75%上昇する。',
+      desc: '防御力が25%/37.5%/50%/62.5%/75%上昇する。',
       icon: '/images/skills/hero_skill_icon_500153.png',
     },
   ],

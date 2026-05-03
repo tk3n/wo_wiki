@@ -7,7 +7,7 @@ export const bradley = {
   troopType: 'archer',
   heroType: '戦闘',
   season: 7,
-  icon: '/images/heroes/20240222_3.jpg',
+  icon: '/images/heroes/bradley.jpg',
 
   exploration: {
     stats: { atk: 8656, def: 7126, hp: 53446 },

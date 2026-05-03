@@ -31,7 +31,7 @@ export const sonya = {
   },
 
   expedition: {
-    stats: { atk: '+780.62%', def: '+780.62%' },
+    stats: { atk: '780.62%', def: '780.62%' },
     skills: [
     {
       name: 'トレジャーハンター',
@@ -53,9 +53,9 @@ export const sonya = {
   specialEquipment: {
     name: '海蛙(Lv.10)',
     explorationStats: {
-      '攻撃': '1,737',
-      '防御': '1,737',
-      'HP': '17,370',
+      '攻撃': '1737',
+      '防御': '1737',
+      'HP': '17370',
     },
     expeditionStats: {
       '殺傷力': '+193.00%',

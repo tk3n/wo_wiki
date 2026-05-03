@@ -1,12 +1,18 @@
-import { defineConfig } from 'astro/config'
+import { defineConfig, envField } from 'astro/config'
 import preact from '@astrojs/preact'
+import cloudflare from '@astrojs/cloudflare'
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin'
-
-const isProd = process.env.NODE_ENV === 'production'
 
 export default defineConfig({
   output: 'static',
-  base: isProd ? '/wo_wiki' : '/',
+  adapter: cloudflare(),
+  env: {
+    schema: {
+      OPENAI_API_KEY: envField.secret({ context: 'server', access: 'secret' }),
+    },
+  },
+  site: 'https://wiki.luida-bar.com',
+  base: '/',
   integrations: [preact()],
   vite: {
     plugins: [vanillaExtractPlugin()],

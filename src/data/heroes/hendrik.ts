@@ -31,7 +31,7 @@ export const hendrik = {
   },
 
   expedition: {
-    stats: { atk: '+780.62%', def: '+780.62%' },
+    stats: { atk: '780.62%', def: '780.62%' },
     skills: [
     {
       name: '蠕虫のかみつき',
@@ -53,9 +53,9 @@ export const hendrik = {
   specialEquipment: {
     name: '深淵ダイバー(Lv.10)',
     explorationStats: {
-      '攻撃': '2,107',
-      '防御': '1,737',
-      'HP': '13,027',
+      '攻撃': '2107',
+      '防御': '1737',
+      'HP': '13027',
     },
     expeditionStats: {
       '殺傷力': '+193.00%',

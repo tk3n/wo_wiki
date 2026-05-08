@@ -48,6 +48,44 @@ function toolCallLabel(tc: ToolCall): string {
   return `${tc.name} を実行中...`
 }
 
+const RATE_LIMIT_KEY = 'wo_wiki_rate_limit'
+const WEEKLY_LIMIT = 50
+
+type RateLimitData = {
+  weekStart: string
+  count: number
+}
+
+function getMonday(): string {
+  const now = new Date()
+  const day = now.getDay()
+  const diff = day === 0 ? -6 : 1 - day
+  const monday = new Date(now)
+  monday.setDate(now.getDate() + diff)
+  return monday.toISOString().split('T')[0]
+}
+
+function getRateLimitCount(): number {
+  try {
+    const raw = localStorage.getItem(RATE_LIMIT_KEY)
+    if (!raw) return 0
+    const data: RateLimitData = JSON.parse(raw)
+    if (data.weekStart !== getMonday()) return 0
+    return data.count
+  } catch {
+    return 0
+  }
+}
+
+function incrementRateLimitCount() {
+  try {
+    const data: RateLimitData = { weekStart: getMonday(), count: getRateLimitCount() + 1 }
+    localStorage.setItem(RATE_LIMIT_KEY, JSON.stringify(data))
+  } catch {
+    // localStorageが使えない環境は無視
+  }
+}
+
 const EXAMPLES = [
   '相手が523の編成です。集結の乗り手として左英雄は何がいいですか？',
   '防衛の編成を教えてください。バフ主は誰がいいですか？',
@@ -79,6 +117,18 @@ export function BattleAdvisor({ baseUrl }: Props) {
   async function sendMessage(text?: string) {
     const content = (text ?? input).trim()
     if (!content || isStreaming) return
+
+    const currentCount = getRateLimitCount()
+    if (currentCount >= WEEKLY_LIMIT) {
+      setMessages(prev => [
+        ...prev,
+        { role: 'user', content },
+        { role: 'assistant', content: '今週のメッセージ制限（50件）に達したのだ！月曜日にリセットされるので、また来週相談してほしいのだ。' },
+      ])
+      setInput('')
+      return
+    }
+    incrementRateLimitCount()
 
     const userMsg: Message = { role: 'user', content }
     const nextMessages = [...messages, userMsg]

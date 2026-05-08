@@ -8,7 +8,7 @@ export default defineConfig({
   adapter: cloudflare(),
   env: {
     schema: {
-      OPENAI_API_KEY: envField.secret({ context: 'server', access: 'secret' }),
+      OPENAI_API_KEY: envField.string({ context: 'server', access: 'secret' }),
     },
   },
   site: 'https://wiki.luida-bar.com',
